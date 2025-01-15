@@ -1,0 +1,32 @@
+person:
+  userName: zhangsan #如果这里使用单引号包围，将会整体以字符串进行输出，如果使用双引号包围，将会进行一次转义，例如\n会变成换行，再进行输出
+  boss: false
+  birth: 2019/12/12 20:12:33
+  age: 18
+  pet:
+    name: tomcat
+    weight: 23.4
+  interests: [篮球,游泳]
+  animal:
+    - jerry
+    - mario
+  score:
+    english:
+      first: 30
+      second: 40
+      third: 50
+    math: [131,140,148]
+    chinese: {first: 128,second: 136}
+  salarys: [3999,4999.98,5999.99]
+  allPets:
+    sick:
+      - {name: tom}
+      - {name: jerry,weight: 47}
+    health: [{name: mario,weight: 47}]
+
+spring:
+  mvc:
+    static-path-pattern: /res/**   #配置静态资源访问路径
+  web:
+    resources:
+      static-locations: {/abc/}
